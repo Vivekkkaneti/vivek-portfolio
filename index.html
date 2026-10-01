@@ -1,49 +1,3008 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101211"><meta name="description" content="Kaneti Vivek — AI/LLM Evaluation Analyst portfolio."><title>Kaneti Vivek — AI Quality Platform</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="icon" href="/favicon.png" type="image/png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101211">
+<meta name="description" content="Kaneti Vivek — AI/LLM Evaluation Analyst portfolio.">
+<title>Kaneti Vivek — AI Quality Platform</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" href="/favicon.png" type="image/png">
+
 <style>
-:root{--bg:#101211;--panel:#171b18;--panel2:#1d221f;--ink:#f1f1ef;--muted:#a4aaa6;--dim:#727974;--line:rgba(241,241,239,.14);--green:#3ecf8e;--green2:#85e7ba;--darkgreen:#13261c;--sans:Inter,system-ui,sans-serif;--mono:'DM Mono',monospace;--max:1200px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 var(--sans);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 50% -12%,rgba(62,207,142,.14),transparent 40%),#101211}body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.23;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(#000,transparent 80%)}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.mono{font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase}.green{color:var(--green)}.announcement{height:34px;border-bottom:1px solid var(--line);display:flex;justify-content:center;align-items:center;gap:12px;color:var(--muted);font-size:11px}.announcement b{color:var(--green);font-weight:500}.announcement a{color:var(--green);border-bottom:1px solid rgba(62,207,142,.45)}header{border-bottom:1px solid var(--line)}nav{height:68px;display:flex;align-items:center;gap:30px}.logo{font-size:16px;font-weight:700;letter-spacing:-.07em;margin-right:16px}.logo i{font-style:normal;color:var(--green)}.navmenu{display:flex;gap:24px;align-items:center;color:var(--muted);font-size:12px;flex:1}.navmenu a:hover,.navmenu a.active{color:var(--green)}.navmenu a:after{content:'⌄';font-size:11px;margin-left:6px;color:var(--dim)}.navmenu a.simple:after{display:none}.navright{display:flex;align-items:center;gap:17px;color:var(--muted);font-size:12px}.signin:hover{color:var(--green)}.navbutton,.button{border:1px solid var(--green);border-radius:5px;padding:10px 14px;color:var(--green);font-size:12px;transition:.2s}.navbutton:hover,.button:hover{background:var(--green);color:var(--darkgreen)}.skip{position:fixed;left:10px;top:10px;z-index:20;transform:translateY(-150%);background:var(--green);color:var(--darkgreen);padding:8px;font:10px var(--mono)}.skip:focus{transform:none}
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;padding:120px 0 115px;align-items:center}.hero h1{font-size:clamp(52px,7.4vw,94px);line-height:.94;letter-spacing:-.1em;margin:0 0 24px;font-weight:700;max-width:680px}.hero h1 span{color:var(--green)}.hero-copy{max-width:510px;color:var(--muted);font-size:16px;line-height:1.7}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.button.fill{background:var(--green);color:var(--darkgreen)}.button.fill:hover{background:var(--green2)}.hero-note{margin-top:32px;color:var(--dim)}.hero-note b{color:var(--green);font-weight:400}.hero-art{min-height:380px;border:1px solid var(--line);background:linear-gradient(140deg,rgba(62,207,142,.13),rgba(20,23,21,.86) 53%,rgba(62,207,142,.04));position:relative;overflow:hidden}.hero-art:before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 39%,rgba(62,207,142,.1) 50%,transparent 61%);animation:scan 8s linear infinite}.art-head{height:44px;border-bottom:1px solid var(--line);padding:13px 15px;display:flex;gap:5px;align-items:center}.dot{width:7px;height:7px;border-radius:50%;background:#f28b68}.dot:nth-child(2){background:var(--green)}.dot:nth-child(3){background:#8be4c7}.art-head span:last-child{margin-left:auto;color:var(--dim)}.art-body{height:280px;display:grid;place-items:center;position:relative}.orb{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),#baf4d5);color:var(--darkgreen);font:700 13px var(--mono);box-shadow:0 0 0 10px rgba(62,207,142,.09),0 0 55px rgba(62,207,142,.45);animation:pulse 3s ease-in-out infinite;z-index:2}.orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(62,207,142,.27);border-radius:50%;transform:rotateX(65deg);animation:orbit 13s linear infinite}.orb:before{width:270px;height:130px}.orb:after{width:185px;height:80px;animation-direction:reverse;animation-duration:8s;border-color:rgba(133,231,186,.3)}.art-tag{position:absolute;border:1px solid var(--line);padding:6px 8px;background:rgba(28,28,28,.8);color:var(--muted);font:9px var(--mono)}.tag1{right:17px;top:63px}.tag2{left:16px;bottom:38px}.art-bottom{border-top:1px solid var(--line);padding:12px 15px;color:var(--dim)}
-.section{border-top:1px solid var(--line);padding:105px 0}.section-title{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:42px}.kicker{color:var(--green)}.section-title h2{font-size:clamp(35px,5vw,62px);letter-spacing:-.09em;line-height:.98;margin:15px 0 0}.section-title h2 em{font-style:normal;color:var(--green)}.section-title p{max-width:430px;color:var(--muted);font-size:14px}.bento{display:grid;grid-template-columns:1.35fr .85fr .85fr;grid-template-rows:190px 190px;gap:1px;background:var(--line);border:1px solid var(--line)}.bento-card{background:var(--panel);padding:25px;position:relative;overflow:hidden;transition:.25s}.bento-card:hover{background:var(--panel2);box-shadow:inset 0 2px 0 var(--green)}.bento-card.feature{grid-row:span 2;padding:29px}.bento-card.feature:after{content:"";position:absolute;right:-80px;bottom:-120px;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle,rgba(62,207,142,.33),transparent 64%);animation:breathe 5s ease-in-out infinite}.bento-icon{color:var(--green);font:18px var(--mono)}.bento-card h3{font-size:19px;letter-spacing:-.05em;margin:22px 0 8px;position:relative;z-index:1}.bento-card.feature h3{font-size:28px;margin-top:28px}.bento-card p{color:var(--muted);font-size:12px;max-width:310px;position:relative;z-index:1}.bento-list{list-style:none;padding:0;margin:25px 0 0;position:relative;z-index:1;color:var(--muted);font-size:12px}.bento-list li{margin:9px 0}.bento-list li:before{content:'✓';color:var(--green);margin-right:8px}.tiny{color:var(--dim);font:10px var(--mono)}
-.dashboard{display:grid;grid-template-columns:.8fr 1.2fr;border:1px solid var(--line);background:var(--panel);min-height:390px}.dash-nav{border-right:1px solid var(--line);padding:25px}.dash-nav p{color:var(--muted);font-size:13px;margin:0 0 24px}.dash-tabs{display:grid;gap:7px}.dash-tab{text-align:left;border:1px solid transparent;background:transparent;color:var(--muted);padding:12px;font-size:12px;cursor:pointer;border-radius:4px}.dash-tab:hover{color:var(--ink)}.dash-tab.active{border-color:rgba(62,207,142,.4);background:rgba(62,207,142,.08);color:var(--green)}.dash-main{padding:25px;position:relative;overflow:hidden}.dash-label{color:var(--green)}.dash-main h3{font-size:28px;letter-spacing:-.06em;margin:14px 0 6px}.dash-main>p{color:var(--muted);font-size:13px;max-width:510px}.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:27px}.metric{background:var(--bg);padding:16px}.metric b{display:block;color:var(--green);font-size:24px;letter-spacing:-.06em}.metric small{color:var(--dim);font:9px var(--mono);text-transform:uppercase}.chart{height:100px;margin-top:20px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(62,207,142,.1),transparent);position:relative;overflow:hidden}.chart svg{width:100%;height:100%}.dash-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}.dash-chip{border:1px solid var(--line);padding:9px;color:var(--muted);font:10px var(--mono)}.dash-chip b{display:block;color:var(--ink);font:600 13px var(--sans);margin-bottom:3px}
-.tools-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}.tool-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.tool-tab{padding:10px 12px;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:4px;cursor:pointer;font:11px var(--mono)}.tool-tab.active,.tool-tab:hover{border-color:var(--green);color:var(--green);background:rgba(62,207,142,.08)}.tool-preview{border:1px solid var(--line);background:var(--panel);padding:25px;min-height:255px}.tool-preview-top{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:15px;color:var(--dim)}.tool-preview h3{font-size:26px;letter-spacing:-.06em;margin:25px 0 7px}.tool-preview p{color:var(--muted);font-size:13px}.code-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.code-row span{padding:7px 9px;background:var(--bg);border:1px solid var(--line);color:var(--green);font:10px var(--mono)}
-.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.story{background:var(--panel);padding:25px;min-height:245px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s}.story:hover{background:var(--panel2);transform:translateY(-3px)}.story-mark{color:var(--green);font-size:22px}.story h3{font-size:19px;line-height:1.1;letter-spacing:-.05em;margin:19px 0 8px}.story p{color:var(--muted);font-size:12px;margin:0}.story-foot{color:var(--green);font:10px var(--mono);text-transform:uppercase;margin-top:20px}.community{border:1px solid var(--line);background:linear-gradient(120deg,rgba(62,207,142,.13),rgba(23,27,24,.92));padding:35px;display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.community h3{font-size:30px;letter-spacing:-.07em;margin:15px 0 8px}.community p{color:var(--muted);font-size:13px}.quote-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.quote-card{border:1px solid var(--line);background:rgba(28,28,28,.52);padding:17px;color:var(--muted);font-size:12px}.quote-card b{display:block;color:var(--green);font:10px var(--mono);margin-bottom:9px}
-.cta{background:var(--green);color:var(--darkgreen);border-top:0;padding:100px 0}.cta .kicker{color:#286d4e}.cta h2{font-size:clamp(43px,6vw,78px);letter-spacing:-.1em;line-height:.94;margin:17px 0;max-width:740px}.cta p{max-width:450px;color:#2c6c4e;font-size:14px}.cta-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.cta .button{border-color:var(--darkgreen);color:var(--darkgreen)}.cta .button:hover{background:var(--darkgreen);color:var(--green)}footer{display:flex;justify-content:space-between;gap:20px;padding:28px 0;color:var(--dim);font-size:11px}.available{color:var(--green)}.reveal{opacity:0;transform:translateY(20px);transition:.75s cubic-bezier(.2,.75,.2,1)}.reveal.show{opacity:1;transform:none}.progress{position:fixed;left:0;top:0;width:0;height:2px;background:var(--green);z-index:20;box-shadow:0 0 12px var(--green)}@keyframes orbit{to{transform:rotate(360deg) rotateX(65deg)}}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}@keyframes scan{from{transform:translateX(-80%)}to{transform:translateX(80%)}}@keyframes breathe{0%,100%{transform:scale(.9);opacity:.65}50%{transform:scale(1.08);opacity:1}}
-@media(max-width:850px){.navmenu{gap:13px}.navright .signin{display:none}.hero,.tools-section,.community{grid-template-columns:1fr}.hero{padding:78px 0}.hero-art{max-width:700px}.bento{grid-template-columns:1fr 1fr;grid-template-rows:auto}.bento-card.feature{grid-row:auto;grid-column:span 2;min-height:260px}.dashboard{grid-template-columns:1fr}.dash-nav{border-right:0;border-bottom:1px solid var(--line)}.dash-tabs{grid-template-columns:repeat(3,1fr)}.cards3{grid-template-columns:1fr 1fr}.section-title{align-items:start;flex-direction:column}}
-@media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 30px))}.announcement{font-size:9px}.navmenu{overflow:auto;white-space:nowrap;flex:1}.navmenu a{font-size:10px}.navright{gap:7px}.navbutton{padding:8px 9px;font-size:10px}.logo{margin-right:0}.hero h1{font-size:57px}.section{padding:78px 0}.bento,.cards3{grid-template-columns:1fr}.bento-card.feature{grid-column:auto}.metric-row,.dash-grid{grid-template-columns:1fr 1fr}.dash-tabs{grid-template-columns:1fr}.quote-grid{grid-template-columns:1fr}.cta{padding:78px 0}footer{flex-direction:column}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
-h1,.section-title h2{font-weight:600}.hero h1{font-size:clamp(50px,7vw,88px)}
+:root{
+  --bg:#101211;
+  --panel:#171b18;
+  --panel2:#1d221f;
+  --ink:#f1f1ef;
+  --muted:#a4aaa6;
+  --dim:#727974;
+  --line:rgba(241,241,239,.14);
+  --green:#3ecf8e;
+  --green2:#85e7ba;
+  --darkgreen:#13261c;
+  --sans:Inter,system-ui,sans-serif;
+  --mono:'DM Mono',monospace;
+  --max:1200px
+}
 
-.profile-panel{min-height:430px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(62,207,142,.12),rgba(23,27,24,.96) 48%,rgba(23,27,24,.82));padding:28px;position:relative;overflow:hidden;box-shadow:18px 18px 0 rgba(62,207,142,.05)}.profile-panel:before{content:"";position:absolute;width:380px;height:380px;right:-170px;bottom:-190px;border-radius:50%;border:1px solid rgba(62,207,142,.22);box-shadow:0 0 0 35px rgba(62,207,142,.025),0 0 0 70px rgba(62,207,142,.018);animation:profilePulse 6s ease-in-out infinite}.profile-head{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px}.profile-name{font-size:clamp(48px,6vw,78px);line-height:.88;letter-spacing:-.1em;font-weight:600;margin-top:67px;position:relative}.profile-name span{color:var(--green)}.profile-role{color:var(--muted);font-size:13px;margin-top:18px}.profile-rule{width:100%;height:1px;background:var(--line);margin:28px 0 18px}.profile-facts{display:grid;grid-template-columns:1fr 1fr;gap:15px 20px;position:relative}.profile-facts small{display:block;color:var(--dim);font:9px var(--mono);margin-bottom:4px}.profile-facts b{display:block;color:var(--ink);font-size:12px;font-weight:500}.profile-signal{display:flex;align-items:center;gap:8px;color:var(--dim);margin-top:31px;position:relative}.signal-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green);animation:pulse 2s ease-in-out infinite}.about-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:80px}.about-quote{font-size:clamp(24px,3vw,37px);line-height:1.1;letter-spacing:-.07em;font-weight:500;margin:0}.about-quote span{color:var(--green)}.about-copy{color:var(--muted);font-size:14px}.about-copy p{margin:0 0 16px}.experience-list{border-top:1px solid var(--line)}.experience-row{display:grid;grid-template-columns:.32fr 1.68fr;gap:50px;padding:31px 0;border-bottom:1px solid var(--line)}.experience-date{color:var(--green);padding-top:5px}.experience-row h3{font-size:27px;letter-spacing:-.06em;margin:0 0 5px;font-weight:600}.experience-company{color:var(--ink);font-size:13px;margin:0 0 17px}.experience-row div>p:not(.experience-company){color:var(--muted);font-size:13px;max-width:720px;margin:0}.experience-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.experience-tags span{border:1px solid var(--line);padding:7px 9px;color:var(--dim);font:10px var(--mono)}@keyframes profilePulse{0%,100%{transform:scale(.95);opacity:.65}50%{transform:scale(1.06);opacity:1}}
-@media(max-width:850px){.about-grid{grid-template-columns:1fr;gap:35px}.experience-row{grid-template-columns:1fr;gap:12px}}
-.about-project{display:flex;flex-direction:column;gap:5px;margin-top:25px;padding:17px;border:1px solid rgba(62,207,142,.38);background:rgba(62,207,142,.06);transition:.2s}.about-project:hover{background:rgba(62,207,142,.11);transform:translateY(-2px)}.about-project span{color:var(--green)}.about-project b{font-size:17px;letter-spacing:-.04em;font-weight:600}.about-project small{color:var(--muted);font-size:11px}.experience-date{white-space:nowrap;font-size:10px}
-.skill-grid-14{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.skill-card-14{background:var(--panel);padding:23px;min-height:210px;transition:.25s}.skill-card-14:hover{background:var(--panel2);box-shadow:inset 0 2px 0 var(--green);transform:translateY(-3px);position:relative;z-index:1}.skill-card-14 span{color:var(--green);font:10px var(--mono)}.skill-card-14 h3{font-size:18px;line-height:1.12;letter-spacing:-.045em;margin:23px 0 9px;font-weight:500}.skill-card-14 p{color:var(--muted);font-size:12px;line-height:1.55;margin:0}.experience-company strong{color:var(--green);font-weight:500}.experience-company{border-left:2px solid var(--green);padding-left:10px}.profile-name,.hero h1,.section-title h2,.bento-card h3,.project h3,.story h3,.dash-main h3,.tool-preview h3,.community h3,.cta h2,.experience-row h3{font-weight:500}body,body *{font-weight:400}strong,b,.button,.navbutton,.logo{font-weight:500}.hero h1{font-weight:500}@media(max-width:900px){.skill-grid-14{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.skill-grid-14{grid-template-columns:1fr}}
-.cursor-dot,.cursor-ring{position:fixed;pointer-events:none;z-index:50;border-radius:50%;transform:translate(-50%,-50%);opacity:0;transition:opacity .25s ease}.cursor-dot{width:6px;height:6px;background:var(--green);box-shadow:0 0 14px rgba(62,207,142,.8)}.cursor-ring{width:30px;height:30px;border:1px solid rgba(62,207,142,.58);transition:width .24s ease,height .24s ease,border-color .24s ease,background .24s ease,opacity .25s ease}.cursor-ring.hover{width:48px;height:48px;border-color:var(--green);background:rgba(62,207,142,.07)}@media(pointer:fine){body{cursor:none}a,button,input,textarea{cursor:none}}@media(pointer:coarse){.cursor-dot,.cursor-ring{display:none}}</style>
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:14px/1.5 var(--sans);
+  overflow-x:hidden
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  background:
+    radial-gradient(
+      ellipse at 50% -12%,
+      rgba(62,207,142,.14),
+      transparent 40%
+    ),
+    #101211
+}
+
+body:after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.23;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.045) 1px,
+      transparent 1px
+    );
+  background-size:48px 48px;
+  mask-image:linear-gradient(#000,transparent 80%)
+}
+
+a{
+  color:inherit;
+  text-decoration:none
+}
+
+button,
+input,
+textarea{
+  font:inherit
+}
+
+.wrap{
+  width:min(var(--max),calc(100% - 48px));
+  margin:auto
+}
+
+.mono{
+  font:10px var(--mono);
+  letter-spacing:.12em;
+  text-transform:uppercase
+}
+
+.green{
+  color:var(--green)
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT
+   ========================================================= */
+
+.announcement{
+  height:34px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  color:var(--muted);
+  font-size:11px
+}
+
+.announcement b{
+  color:var(--green);
+  font-weight:500
+}
+
+.announcement a{
+  color:var(--green);
+  border-bottom:1px solid rgba(62,207,142,.45)
+}
+
+
+/* =========================================================
+   HEADER / NAVIGATION
+   ========================================================= */
+
+header{
+  border-bottom:1px solid var(--line);
+  position:relative;
+  z-index:30
+}
+
+nav{
+  height:68px;
+  display:flex;
+  align-items:center;
+  gap:30px;
+  position:relative
+}
+
+.logo{
+  font-size:16px;
+  font-weight:500;
+  letter-spacing:-.07em;
+  margin-right:16px;
+  flex-shrink:0
+}
+
+.logo span{
+  color:var(--green)
+}
+
+.navmenu{
+  display:flex;
+  gap:24px;
+  align-items:center;
+  color:var(--muted);
+  font-size:12px;
+  flex:1
+}
+
+.navmenu a:hover,
+.navmenu a.active{
+  color:var(--green)
+}
+
+.navmenu a:after{
+  content:'⌄';
+  font-size:11px;
+  margin-left:6px;
+  color:var(--dim)
+}
+
+.navmenu a.simple:after{
+  display:none
+}
+
+.navright{
+  display:flex;
+  align-items:center;
+  gap:17px;
+  color:var(--muted);
+  font-size:12px
+}
+
+.signin:hover{
+  color:var(--green)
+}
+
+.navbutton,
+.button{
+  border:1px solid var(--green);
+  border-radius:5px;
+  padding:10px 14px;
+  color:var(--green);
+  font-size:12px;
+  transition:.2s
+}
+
+.navbutton:hover,
+.button:hover{
+  background:var(--green);
+  color:var(--darkgreen)
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+   ========================================================= */
+
+.menu-toggle{
+  display:none;
+  width:42px;
+  height:42px;
+  padding:0;
+  border:1px solid var(--line);
+  border-radius:5px;
+  background:transparent;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+  color:var(--ink);
+  flex-shrink:0
+}
+
+.menu-toggle span{
+  display:block;
+  width:18px;
+  height:1px;
+  background:var(--ink);
+  transition:
+    transform .25s ease,
+    opacity .2s ease,
+    width .25s ease,
+    background .2s ease
+}
+
+.menu-toggle:hover{
+  border-color:var(--green)
+}
+
+.menu-toggle:hover span{
+  background:var(--green)
+}
+
+.mobile-nav-links{
+  display:none
+}
+
+
+/* =========================================================
+   SKIP LINK
+   ========================================================= */
+
+.skip{
+  position:fixed;
+  left:10px;
+  top:10px;
+  z-index:50;
+  transform:translateY(-150%);
+  background:var(--green);
+  color:var(--darkgreen);
+  padding:8px;
+  font:10px var(--mono)
+}
+
+.skip:focus{
+  transform:none
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:60px;
+  padding:120px 0 115px;
+  align-items:center
+}
+
+.hero h1{
+  font-size:clamp(52px,7.4vw,94px);
+  line-height:.94;
+  letter-spacing:-.1em;
+  margin:0 0 24px;
+  font-weight:500;
+  max-width:680px
+}
+
+.hero h1 span{
+  color:var(--green)
+}
+
+.hero-copy{
+  max-width:510px;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.7
+}
+
+.hero-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:28px
+}
+
+.button.fill{
+  background:var(--green);
+  color:var(--darkgreen)
+}
+
+.button.fill:hover{
+  background:var(--green2)
+}
+
+.hero-note{
+  margin-top:32px;
+  color:var(--dim)
+}
+
+.hero-note b{
+  color:var(--green);
+  font-weight:400
+}
+
+.hero-art{
+  min-height:380px;
+  border:1px solid var(--line);
+  background:
+    linear-gradient(
+      140deg,
+      rgba(62,207,142,.13),
+      rgba(20,23,21,.86) 53%,
+      rgba(62,207,142,.04)
+    );
+  position:relative;
+  overflow:hidden
+}
+
+.hero-art:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      105deg,
+      transparent 39%,
+      rgba(62,207,142,.1) 50%,
+      transparent 61%
+    );
+  animation:scan 8s linear infinite
+}
+
+.art-head{
+  height:44px;
+  border-bottom:1px solid var(--line);
+  padding:13px 15px;
+  display:flex;
+  gap:5px;
+  align-items:center
+}
+
+.dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#f28b68
+}
+
+.dot:nth-child(2){
+  background:var(--green)
+}
+
+.dot:nth-child(3){
+  background:#8be4c7
+}
+
+.art-head span:last-child{
+  margin-left:auto;
+  color:var(--dim)
+}
+
+.art-body{
+  height:280px;
+  display:grid;
+  place-items:center;
+  position:relative
+}
+
+.orb{
+  width:66px;
+  height:66px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,var(--green),#baf4d5);
+  color:var(--darkgreen);
+  font:700 13px var(--mono);
+  box-shadow:
+    0 0 0 10px rgba(62,207,142,.09),
+    0 0 55px rgba(62,207,142,.45);
+  animation:pulse 3s ease-in-out infinite;
+  z-index:2
+}
+
+.orb:before,
+.orb:after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(62,207,142,.27);
+  border-radius:50%;
+  transform:rotateX(65deg);
+  animation:orbit 13s linear infinite
+}
+
+.orb:before{
+  width:270px;
+  height:130px
+}
+
+.orb:after{
+  width:185px;
+  height:80px;
+  animation-direction:reverse;
+  animation-duration:8s;
+  border-color:rgba(133,231,186,.3)
+}
+
+.art-tag{
+  position:absolute;
+  border:1px solid var(--line);
+  padding:6px 8px;
+  background:rgba(28,28,28,.8);
+  color:var(--muted);
+  font:9px var(--mono)
+}
+
+.tag1{
+  right:17px;
+  top:63px
+}
+
+.tag2{
+  left:16px;
+  bottom:38px
+}
+
+.art-bottom{
+  border-top:1px solid var(--line);
+  padding:12px 15px;
+  color:var(--dim)
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.section{
+  border-top:1px solid var(--line);
+  padding:105px 0
+}
+
+.section-title{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:30px;
+  margin-bottom:42px
+}
+
+.kicker{
+  color:var(--green)
+}
+
+.section-title h2{
+  font-size:clamp(35px,5vw,62px);
+  letter-spacing:-.09em;
+  line-height:.98;
+  margin:15px 0 0;
+  font-weight:500
+}
+
+.section-title h2 em{
+  font-style:normal;
+  color:var(--green)
+}
+
+.section-title p{
+  max-width:430px;
+  color:var(--muted);
+  font-size:14px
+}
+
+
+/* =========================================================
+   BENTO
+   ========================================================= */
+
+.bento{
+  display:grid;
+  grid-template-columns:1.35fr .85fr .85fr;
+  grid-template-rows:190px 190px;
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line)
+}
+
+.bento-card{
+  background:var(--panel);
+  padding:25px;
+  position:relative;
+  overflow:hidden;
+  transition:.25s
+}
+
+.bento-card:hover{
+  background:var(--panel2);
+  box-shadow:inset 0 2px 0 var(--green)
+}
+
+.bento-card.feature{
+  grid-row:span 2;
+  padding:29px
+}
+
+.bento-card.feature:after{
+  content:"";
+  position:absolute;
+  right:-80px;
+  bottom:-120px;
+  width:330px;
+  height:330px;
+  border-radius:50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(62,207,142,.33),
+      transparent 64%
+    );
+  animation:breathe 5s ease-in-out infinite
+}
+
+.bento-icon{
+  color:var(--green);
+  font:18px var(--mono)
+}
+
+.bento-card h3{
+  font-size:19px;
+  letter-spacing:-.05em;
+  margin:22px 0 8px;
+  position:relative;
+  z-index:1;
+  font-weight:500
+}
+
+.bento-card.feature h3{
+  font-size:28px;
+  margin-top:28px
+}
+
+.bento-card p{
+  color:var(--muted);
+  font-size:12px;
+  max-width:310px;
+  position:relative;
+  z-index:1
+}
+
+.bento-list{
+  list-style:none;
+  padding:0;
+  margin:25px 0 0;
+  position:relative;
+  z-index:1;
+  color:var(--muted);
+  font-size:12px
+}
+
+.bento-list li{
+  margin:9px 0
+}
+
+.bento-list li:before{
+  content:'✓';
+  color:var(--green);
+  margin-right:8px
+}
+
+.tiny{
+  color:var(--dim);
+  font:10px var(--mono)
+}
+
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+.dashboard{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  border:1px solid var(--line);
+  background:var(--panel);
+  min-height:390px
+}
+
+.dash-nav{
+  border-right:1px solid var(--line);
+  padding:25px
+}
+
+.dash-nav p{
+  color:var(--muted);
+  font-size:13px;
+  margin:0 0 24px
+}
+
+.dash-tabs{
+  display:grid;
+  gap:7px
+}
+
+.dash-tab{
+  text-align:left;
+  border:1px solid transparent;
+  background:transparent;
+  color:var(--muted);
+  padding:12px;
+  font-size:12px;
+  cursor:pointer;
+  border-radius:4px
+}
+
+.dash-tab:hover{
+  color:var(--ink)
+}
+
+.dash-tab.active{
+  border-color:rgba(62,207,142,.4);
+  background:rgba(62,207,142,.08);
+  color:var(--green)
+}
+
+.dash-main{
+  padding:25px;
+  position:relative;
+  overflow:hidden
+}
+
+.dash-label{
+  color:var(--green)
+}
+
+.dash-main h3{
+  font-size:28px;
+  letter-spacing:-.06em;
+  margin:14px 0 6px
+}
+
+.dash-main>p{
+  color:var(--muted);
+  font-size:13px;
+  max-width:510px
+}
+
+.metric-row{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  margin-top:27px
+}
+
+.metric{
+  background:var(--bg);
+  padding:16px
+}
+
+.metric b{
+  display:block;
+  color:var(--green);
+  font-size:24px;
+  letter-spacing:-.06em
+}
+
+.metric small{
+  color:var(--dim);
+  font:9px var(--mono);
+  text-transform:uppercase
+}
+
+.chart{
+  height:100px;
+  margin-top:20px;
+  border:1px solid var(--line);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(62,207,142,.1),
+      transparent
+    );
+  position:relative;
+  overflow:hidden
+}
+
+.chart svg{
+  width:100%;
+  height:100%
+}
+
+.dash-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  margin-top:18px
+}
+
+.dash-chip{
+  border:1px solid var(--line);
+  padding:9px;
+  color:var(--muted);
+  font:10px var(--mono)
+}
+
+.dash-chip b{
+  display:block;
+  color:var(--ink);
+  font:600 13px var(--sans);
+  margin-bottom:3px
+}
+
+
+/* =========================================================
+   TOOLS
+   ========================================================= */
+
+.tools-section{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:70px;
+  align-items:start
+}
+
+.tool-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:24px
+}
+
+.tool-tab{
+  padding:10px 12px;
+  border:1px solid var(--line);
+  background:transparent;
+  color:var(--muted);
+  border-radius:4px;
+  cursor:pointer;
+  font:11px var(--mono)
+}
+
+.tool-tab.active,
+.tool-tab:hover{
+  border-color:var(--green);
+  color:var(--green);
+  background:rgba(62,207,142,.08)
+}
+
+.tool-preview{
+  border:1px solid var(--line);
+  background:var(--panel);
+  padding:25px;
+  min-height:255px
+}
+
+.tool-preview-top{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+  padding-bottom:15px;
+  color:var(--dim)
+}
+
+.tool-preview h3{
+  font-size:26px;
+  letter-spacing:-.06em;
+  margin:25px 0 7px
+}
+
+.tool-preview p{
+  color:var(--muted);
+  font-size:13px
+}
+
+.code-row{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:20px
+}
+
+.code-row span{
+  padding:7px 9px;
+  background:var(--bg);
+  border:1px solid var(--line);
+  color:var(--green);
+  font:10px var(--mono)
+}
+
+
+/* =========================================================
+   STORY / COMMUNITY
+   ========================================================= */
+
+.cards3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line)
+}
+
+.story{
+  background:var(--panel);
+  padding:25px;
+  min-height:245px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition:.25s
+}
+
+.story:hover{
+  background:var(--panel2);
+  transform:translateY(-3px)
+}
+
+.story-mark{
+  color:var(--green);
+  font-size:22px
+}
+
+.story h3{
+  font-size:19px;
+  line-height:1.1;
+  letter-spacing:-.05em;
+  margin:19px 0 8px
+}
+
+.story p{
+  color:var(--muted);
+  font-size:12px;
+  margin:0
+}
+
+.story-foot{
+  color:var(--green);
+  font:10px var(--mono);
+  text-transform:uppercase;
+  margin-top:20px
+}
+
+.community{
+  border:1px solid var(--line);
+  background:
+    linear-gradient(
+      120deg,
+      rgba(62,207,142,.13),
+      rgba(23,27,24,.92)
+    );
+  padding:35px;
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:45px;
+  align-items:center
+}
+
+.community h3{
+  font-size:30px;
+  letter-spacing:-.07em;
+  margin:15px 0 8px
+}
+
+.community p{
+  color:var(--muted);
+  font-size:13px
+}
+
+.quote-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px
+}
+
+.quote-card{
+  border:1px solid var(--line);
+  background:rgba(28,28,28,.52);
+  padding:17px;
+  color:var(--muted);
+  font-size:12px
+}
+
+.quote-card b{
+  display:block;
+  color:var(--green);
+  font:10px var(--mono);
+  margin-bottom:9px
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.cta{
+  background:var(--green);
+  color:var(--darkgreen);
+  border-top:0;
+  padding:100px 0
+}
+
+.cta .kicker{
+  color:#286d4e
+}
+
+.cta h2{
+  font-size:clamp(43px,6vw,78px);
+  letter-spacing:-.1em;
+  line-height:.94;
+  margin:17px 0;
+  max-width:740px
+}
+
+.cta p{
+  max-width:450px;
+  color:#2c6c4e;
+  font-size:14px
+}
+
+.cta-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:30px
+}
+
+.cta .button{
+  border-color:var(--darkgreen);
+  color:var(--darkgreen)
+}
+
+.cta .button:hover{
+  background:var(--darkgreen);
+  color:var(--green)
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:28px 0;
+  color:var(--dim);
+  font-size:11px
+}
+
+.available{
+  color:var(--green)
+}
+
+
+/* =========================================================
+   REVEAL / PROGRESS
+   ========================================================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(20px);
+  transition:.75s cubic-bezier(.2,.75,.2,1)
+}
+
+.reveal.show{
+  opacity:1;
+  transform:none
+}
+
+.progress{
+  position:fixed;
+  left:0;
+  top:0;
+  width:0;
+  height:2px;
+  background:var(--green);
+  z-index:50;
+  box-shadow:0 0 12px var(--green)
+}
+
+
+/* =========================================================
+   PROFILE
+   ========================================================= */
+
+.profile-panel{
+  min-height:430px;
+  border:1px solid var(--line);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(62,207,142,.12),
+      rgba(23,27,24,.96) 48%,
+      rgba(23,27,24,.82)
+    );
+  padding:28px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:18px 18px 0 rgba(62,207,142,.05)
+}
+
+.profile-panel:before{
+  content:"";
+  position:absolute;
+  width:380px;
+  height:380px;
+  right:-170px;
+  bottom:-190px;
+  border-radius:50%;
+  border:1px solid rgba(62,207,142,.22);
+  box-shadow:
+    0 0 0 35px rgba(62,207,142,.025),
+    0 0 0 70px rgba(62,207,142,.018);
+  animation:profilePulse 6s ease-in-out infinite
+}
+
+.profile-head{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+  padding-bottom:16px
+}
+
+.profile-name{
+  font-size:clamp(48px,6vw,78px);
+  line-height:.88;
+  letter-spacing:-.1em;
+  font-weight:600;
+  margin-top:67px;
+  position:relative
+}
+
+.profile-name span{
+  color:var(--green)
+}
+
+.profile-role{
+  color:var(--muted);
+  font-size:13px;
+  margin-top:18px
+}
+
+.profile-rule{
+  width:100%;
+  height:1px;
+  background:var(--line);
+  margin:28px 0 18px
+}
+
+.profile-facts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px 20px;
+  position:relative
+}
+
+.profile-facts small{
+  display:block;
+  color:var(--dim);
+  font:9px var(--mono);
+  margin-bottom:4px
+}
+
+.profile-facts b{
+  display:block;
+  color:var(--ink);
+  font-size:12px;
+  font-weight:500
+}
+
+.profile-signal{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:var(--dim);
+  margin-top:31px;
+  position:relative
+}
+
+.signal-dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 12px var(--green);
+  animation:pulse 2s ease-in-out infinite
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:.78fr 1.22fr;
+  gap:80px
+}
+
+.about-quote{
+  font-size:clamp(24px,3vw,37px);
+  line-height:1.1;
+  letter-spacing:-.07em;
+  font-weight:500;
+  margin:0
+}
+
+.about-quote span{
+  color:var(--green)
+}
+
+.about-copy{
+  color:var(--muted);
+  font-size:14px
+}
+
+.about-copy p{
+  margin:0 0 16px
+}
+
+.about-project{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  margin-top:25px;
+  padding:17px;
+  border:1px solid rgba(62,207,142,.38);
+  background:rgba(62,207,142,.06);
+  transition:.2s
+}
+
+.about-project:hover{
+  background:rgba(62,207,142,.11);
+  transform:translateY(-2px)
+}
+
+.about-project span{
+  color:var(--green)
+}
+
+.about-project b{
+  font-size:17px;
+  letter-spacing:-.04em;
+  font-weight:600
+}
+
+.about-project small{
+  color:var(--muted);
+  font-size:11px
+}
+
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+.experience-list{
+  border-top:1px solid var(--line)
+}
+
+.experience-row{
+  display:grid;
+  grid-template-columns:.32fr 1.68fr;
+  gap:50px;
+  padding:31px 0;
+  border-bottom:1px solid var(--line)
+}
+
+.experience-date{
+  color:var(--green);
+  padding-top:5px;
+  white-space:nowrap;
+  font-size:10px
+}
+
+.experience-row h3{
+  font-size:27px;
+  letter-spacing:-.06em;
+  margin:0 0 5px;
+  font-weight:600
+}
+
+.experience-company{
+  color:var(--ink);
+  font-size:13px;
+  margin:0 0 17px;
+  border-left:2px solid var(--green);
+  padding-left:10px
+}
+
+.experience-company strong{
+  color:var(--green);
+  font-weight:500
+}
+
+.experience-row div>p:not(.experience-company){
+  color:var(--muted);
+  font-size:13px;
+  max-width:720px;
+  margin:0
+}
+
+.experience-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:20px
+}
+
+.experience-tags span{
+  border:1px solid var(--line);
+  padding:7px 9px;
+  color:var(--dim);
+  font:10px var(--mono)
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skill-grid-14{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line)
+}
+
+.skill-card-14{
+  background:var(--panel);
+  padding:23px;
+  min-height:210px;
+  transition:.25s
+}
+
+.skill-card-14:hover{
+  background:var(--panel2);
+  box-shadow:inset 0 2px 0 var(--green);
+  transform:translateY(-3px);
+  position:relative;
+  z-index:1
+}
+
+.skill-card-14 span{
+  color:var(--green);
+  font:10px var(--mono)
+}
+
+.skill-card-14 h3{
+  font-size:18px;
+  line-height:1.12;
+  letter-spacing:-.045em;
+  margin:23px 0 9px;
+  font-weight:500
+}
+
+.skill-card-14 p{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.55;
+  margin:0
+}
+
+
+/* =========================================================
+   CURSOR
+   ========================================================= */
+
+.cursor-dot,
+.cursor-ring{
+  position:fixed;
+  pointer-events:none;
+  z-index:50;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  opacity:0;
+  transition:opacity .25s ease
+}
+
+.cursor-dot{
+  width:6px;
+  height:6px;
+  background:var(--green);
+  box-shadow:0 0 14px rgba(62,207,142,.8)
+}
+
+.cursor-ring{
+  width:30px;
+  height:30px;
+  border:1px solid rgba(62,207,142,.58);
+  transition:
+    width .24s ease,
+    height .24s ease,
+    border-color .24s ease,
+    background .24s ease,
+    opacity .25s ease
+}
+
+.cursor-ring.hover{
+  width:48px;
+  height:48px;
+  border-color:var(--green);
+  background:rgba(62,207,142,.07)
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media(max-width:900px){
+
+  .skill-grid-14{
+    grid-template-columns:repeat(2,1fr)
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:35px
+  }
+
+  .experience-row{
+    grid-template-columns:1fr;
+    gap:12px
+  }
+
+  .tools-section,
+  .community{
+    grid-template-columns:1fr
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    padding:85px 0
+  }
+
+  .hero-art{
+    max-width:700px
+  }
+
+  .bento{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:auto
+  }
+
+  .bento-card.feature{
+    grid-row:auto;
+    grid-column:span 2;
+    min-height:260px
+  }
+
+  .dashboard{
+    grid-template-columns:1fr
+  }
+
+  .dash-nav{
+    border-right:0;
+    border-bottom:1px solid var(--line)
+  }
+
+  .dash-tabs{
+    grid-template-columns:repeat(3,1fr)
+  }
+
+  .cards3{
+    grid-template-columns:1fr 1fr
+  }
+
+  .section-title{
+    align-items:start;
+    flex-direction:column
+  }
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+@media(max-width:680px){
+
+  header{
+    position:relative;
+    z-index:30
+  }
+
+  nav{
+    height:62px;
+    gap:0;
+    justify-content:space-between
+  }
+
+  .logo{
+    font-size:16px;
+    margin:0;
+    position:relative;
+    z-index:32
+  }
+
+  /* Hide desktop right-side buttons */
+  .navright{
+    display:none
+  }
+
+  /* Show hamburger */
+  .menu-toggle{
+    display:flex;
+    position:relative;
+    z-index:32
+  }
+
+  /* Mobile dropdown */
+  .navmenu{
+    position:absolute;
+    top:62px;
+    left:0;
+    right:0;
+
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+
+    padding:8px 15px 15px;
+
+    background:rgba(16,18,17,.98);
+    border:1px solid var(--line);
+    border-top:0;
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-10px);
+
+    transition:
+      opacity .22s ease,
+      transform .22s ease,
+      visibility .22s ease;
+
+    pointer-events:none;
+
+    box-shadow:0 18px 35px rgba(0,0,0,.35)
+  }
+
+  .navmenu.open{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+    pointer-events:auto
+  }
+
+  .navmenu>a{
+    display:flex;
+    align-items:center;
+    min-height:48px;
+    padding:0 10px;
+    border-bottom:1px solid var(--line);
+    color:var(--muted);
+    font-size:13px
+  }
+
+  .navmenu>a:hover,
+  .navmenu>a:active{
+    color:var(--green);
+    background:rgba(62,207,142,.05)
+  }
+
+  .navmenu>a:after{
+    display:none
+  }
+
+  /* Mobile LinkedIn / Resume */
+  .mobile-nav-links{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+    padding-top:12px
+  }
+
+  .mobile-nav-links a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:42px;
+    border:1px solid var(--line);
+    border-radius:4px;
+    color:var(--muted);
+    font-size:11px
+  }
+
+  .mobile-nav-links a:hover{
+    color:var(--green);
+    border-color:var(--green);
+    background:rgba(62,207,142,.06)
+  }
+
+  /* Hamburger transforms into X */
+  .menu-toggle.open span:nth-child(1){
+    transform:translateY(6px) rotate(45deg)
+  }
+
+  .menu-toggle.open span:nth-child(2){
+    opacity:0;
+    width:0
+  }
+
+  .menu-toggle.open span:nth-child(3){
+    transform:translateY(-6px) rotate(-45deg)
+  }
+
+  /* General mobile layout */
+  .wrap{
+    width:calc(100% - 30px)
+  }
+
+  .hero{
+    padding:72px 0 70px;
+    gap:45px
+  }
+
+  .hero h1{
+    font-size:57px
+  }
+
+  .hero-copy{
+    font-size:14px
+  }
+
+  .profile-panel{
+    min-height:400px;
+    padding:22px
+  }
+
+  .profile-name{
+    font-size:52px;
+    margin-top:52px
+  }
+
+  .section{
+    padding:78px 0
+  }
+
+  .section-title h2{
+    font-size:43px
+  }
+
+  .skill-grid-14{
+    grid-template-columns:1fr
+  }
+
+  .bento,
+  .cards3{
+    grid-template-columns:1fr
+  }
+
+  .bento-card.feature{
+    grid-column:auto
+  }
+
+  .metric-row{
+    grid-template-columns:1fr 1fr
+  }
+
+  .dash-grid{
+    grid-template-columns:1fr 1fr
+  }
+
+  .dash-tabs{
+    grid-template-columns:1fr
+  }
+
+  .quote-grid{
+    grid-template-columns:1fr
+  }
+
+  .community{
+    padding:25px
+  }
+
+  .cta{
+    padding:78px 0
+  }
+
+  .cta h2{
+    font-size:51px
+  }
+
+  footer{
+    flex-direction:column;
+    padding:25px 0
+  }
+
+  .announcement{
+    font-size:9px;
+    padding:0 10px;
+    gap:7px
+  }
+
+  .tool-preview{
+    padding:20px
+  }
+
+  .tool-preview h3{
+    font-size:24px
+  }
+
+  .experience-row h3{
+    font-size:24px
+  }
+
+  .profile-facts{
+    gap:18px 12px
+  }
+
+  .profile-facts b{
+    font-size:11px
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media(max-width:380px){
+
+  .wrap{
+    width:calc(100% - 24px)
+  }
+
+  nav{
+    height:58px
+  }
+
+  .navmenu{
+    top:58px
+  }
+
+  .menu-toggle{
+    width:40px;
+    height:40px
+  }
+
+  .announcement{
+    padding:0 8px;
+    gap:7px;
+    text-align:center
+  }
+
+  .announcement span{
+    display:none
+  }
+
+  .hero h1{
+    font-size:51px
+  }
+
+  .profile-name{
+    font-size:47px
+  }
+
+  .section-title h2{
+    font-size:39px
+  }
+
+  .cta h2{
+    font-size:45px
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / REDUCED MOTION
+   ========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+  *,
+  *:before,
+  *:after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important
+  }
+
+  .reveal{
+    opacity:1;
+    transform:none
+  }
+}
+
+
+/* =========================================================
+   FONT WEIGHTS
+   ========================================================= */
+
+body,
+body *{
+  font-weight:400
+}
+
+strong,
+b,
+.button,
+.navbutton,
+.logo{
+  font-weight:500
+}
+
+
+/* =========================================================
+   DESKTOP CURSOR
+   ========================================================= */
+
+@media(pointer:fine){
+
+  body{
+    cursor:none
+  }
+
+  a,
+  button,
+  input,
+  textarea{
+    cursor:none
+  }
+}
+
+@media(pointer:coarse){
+
+  .cursor-dot,
+  .cursor-ring{
+    display:none
+  }
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes orbit{
+  to{
+    transform:rotate(360deg) rotateX(65deg)
+  }
+}
+
+@keyframes pulse{
+  0%,100%{
+    transform:scale(1)
+  }
+
+  50%{
+    transform:scale(1.08)
+  }
+}
+
+@keyframes scan{
+  from{
+    transform:translateX(-80%)
+  }
+
+  to{
+    transform:translateX(80%)
+  }
+}
+
+@keyframes breathe{
+  0%,100%{
+    transform:scale(.9);
+    opacity:.65
+  }
+
+  50%{
+    transform:scale(1.08);
+    opacity:1
+  }
+}
+
+@keyframes profilePulse{
+  0%,100%{
+    transform:scale(.95);
+    opacity:.65
+  }
+
+  50%{
+    transform:scale(1.06);
+    opacity:1
+  }
+}
+</style>
 </head>
-<body><a class="skip" href="#main">Skip to content</a><div class="progress"></div><div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
-<div class="announcement"><b>AI QUALITY LAB</b><span>Portfolio of Kaneti Vivek — evaluation, annotation & safety</span><a href="#contact">Available for opportunities ↗</a></div>
-<header><div class="wrap"><nav><a class="logo" href="#top">KV<span>_</span>AI</a><div class="navmenu"><a class="simple" href="#about">About</a><a class="simple" href="#experience">Experience</a><a class="simple" href="#projects">Projects</a><a class="simple" href="#capabilities">Skills</a><a class="simple" href="#contact">Contact</a></div><div class="navright"><a class="signin" href="https://linkedin.com/in/kanetivivek" target="_blank" rel="noopener">LinkedIn</a><a class="navbutton" href="https://drive.google.com/uc?export=download&id=14eI9_n61438vlj1Fba-Mh8nK0mswAE2P" target="_blank" rel="noopener">Resume ↓</a></div></nav></div></header>
+
+
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="progress"></div>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+
+<!-- =======================================================
+     ANNOUNCEMENT
+     ======================================================= -->
+
+<div class="announcement">
+  <b>AI QUALITY LAB</b>
+  <span>Portfolio of Kaneti Vivek — evaluation, annotation & safety</span>
+  <a href="#contact">Available for opportunities ↗</a>
+</div>
+
+
+<!-- =======================================================
+     HEADER
+     ======================================================= -->
+
+<header>
+  <div class="wrap">
+
+    <nav>
+
+      <a class="logo" href="#top">
+        KV<span>_</span>AI
+      </a>
+
+
+      <!-- Desktop + Mobile Navigation -->
+      <div class="navmenu" id="mobileMenu">
+
+        <a class="simple" href="#about">
+          About
+        </a>
+
+        <a class="simple" href="#experience">
+          Experience
+        </a>
+
+        <a class="simple" href="#tools">
+          Projects
+        </a>
+
+        <a class="simple" href="#capabilities">
+          Skills
+        </a>
+
+        <a class="simple" href="#contact">
+          Contact
+        </a>
+
+
+        <!-- Mobile-only links -->
+        <div class="mobile-nav-links">
+
+          <a
+            href="https://linkedin.com/in/kanetivivek"
+            target="_blank"
+            rel="noopener">
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="https://drive.google.com/uc?export=download&id=14eI9_n61438vlj1Fba-Mh8nK0mswAE2P"
+            target="_blank"
+            rel="noopener">
+            Resume ↓
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Desktop-only right navigation -->
+      <div class="navright">
+
+        <a
+          class="signin"
+          href="https://linkedin.com/in/kanetivivek"
+          target="_blank"
+          rel="noopener">
+          LinkedIn
+        </a>
+
+        <a
+          class="navbutton"
+          href="https://drive.google.com/uc?export=download&id=14eI9_n61438vlj1Fba-Mh8nK0mswAE2P"
+          target="_blank"
+          rel="noopener">
+          Resume ↓
+        </a>
+
+      </div>
+
+
+      <!-- Mobile hamburger -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        type="button">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- =======================================================
+     MAIN
+     ======================================================= -->
+
 <main id="main">
-<section class="hero wrap" id="top"><div class="reveal"><div class="mono green">KANETI VIVEK / AI EVALUATION ANALYST</div><h1>AI quality<br /><span>you can trust.</span></h1><p class="hero-copy">AI/LLM Evaluation Analyst turning model responses, multimodal data and safety signals into consistent quality systems teams can trust.</p><div class="hero-actions"><a class="button fill" href="#capabilities">Explore capabilities ↗</a><a class="button" href="mailto:vivekkaneti2@gmail.com">Request a conversation</a></div><div class="hero-note mono"><b>●</b> TEXT · VISION · SPEECH &nbsp; / &nbsp; HYDERABAD, INDIA</div></div><div class="profile-panel reveal"><div class="profile-head"><span class="mono green">PROFILE / 01</span><span class="mono">AVAILABLE</span></div><div class="profile-name">Kaneti<br /><span>Vivek</span></div><div class="profile-role">AI / LLM Evaluation Analyst</div><div class="profile-rule"></div><div class="profile-facts"><div><small>BASED IN</small><b>Hyderabad, India</b></div><div><small>FOCUS</small><b>Model quality & safety</b></div><div><small>MODALITIES</small><b>Text · Vision · Speech</b></div><div><small>OPEN TO</small><b>Evaluation opportunities</b></div></div><div class="profile-signal"><span class="signal-dot"></span><span class="mono">reviewing the details that matter</span></div></div></section>
 
 
+<!-- =======================================================
+     HERO
+     ======================================================= -->
+
+<section class="hero wrap" id="top">
+
+  <div class="reveal">
+
+    <div class="mono green">
+      KANETI VIVEK / AI EVALUATION ANALYST
+    </div>
+
+    <h1>
+      AI quality<br>
+      <span>you can trust.</span>
+    </h1>
+
+    <p class="hero-copy">
+      AI/LLM Evaluation Analyst turning model responses,
+      multimodal data and safety signals into consistent
+      quality systems teams can trust.
+    </p>
+
+    <div class="hero-actions">
+
+      <a
+        class="button fill"
+        href="#capabilities">
+        Explore capabilities ↗
+      </a>
+
+      <a
+        class="button"
+        href="mailto:vivekkaneti2@gmail.com">
+        Request a conversation
+      </a>
+
+    </div>
+
+    <div class="hero-note mono">
+      <b>●</b>
+      TEXT · VISION · SPEECH
+      &nbsp; / &nbsp;
+      HYDERABAD, INDIA
+    </div>
+
+  </div>
 
 
-<section class="section" id="about"><div class="wrap"><div class="section-title"><div><div class="kicker mono">01 / About</div><h2>Careful review.<br /><em>Clear signals.</em></h2></div><p>Kaneti Vivek is an AI/LLM Evaluation Analyst focused on making model behavior understandable, comparable and useful.</p></div><div class="about-grid reveal"><p class="about-quote">I work where language, data quality and <span>responsible AI</span> meet.</p><div class="about-copy"><p>I evaluate model responses, prompts and multimodal data with a production mindset. My work spans SFT data review, pairwise comparison, Likert and ELO scoring, rubric adherence, hallucination detection, instruction-following and AI safety checks.</p><p>I also bring hands-on experience with image and video annotation, speech-to-speech evaluation, transcription quality and language review — always with a focus on consistency and useful feedback.</p><a class="about-project" href="https://annotatorjobs.vercel.app/" target="_blank" rel="noopener"><span class="mono">FOUNDER PROJECT</span><b>EvalLoop Jobs ↗</b><small>Built and deployed AI opportunity discovery platform</small></a></div></div></div></section>
-<section class="section" id="experience"><div class="wrap"><div class="section-title"><div><div class="kicker mono">02 / Experience</div><h2>Work that keeps<br /><em>AI honest.</em></h2></div><p>Experience across evaluation, annotation, quality assurance and independent AI product building.</p></div><div class="experience-list reveal"><article class="experience-row"><div class="experience-date mono">JUNE 2026 — AUG 2026</div><div><h3>AI / LLM Evaluation Analyst</h3><p class="experience-company"><strong>Innodata</strong> · 3-month experience · June 2026 — August 2026</p><p>Evaluate model outputs across text, vision and speech using structured rubrics, pairwise ranking, Likert/ELO scoring and instruction-following checks.</p><div class="experience-tags"><span>Response evaluation</span><span>Calibration</span><span>AI safety</span></div></div></article><article class="experience-row"><div class="experience-date mono">INDEPENDENT BUILD</div><div><h3>Founder — EvalLoop Jobs</h3><p class="experience-company">AI opportunity discovery platform</p><p>Designed, built and deployed a searchable platform for AI training, data annotation, LLM evaluation and AI operations opportunities, including an LLM-powered chatbot.</p><div class="experience-tags"><span>Product building</span><span>LLM integration</span><span>GitHub · Vercel</span></div></div></article></div></div></section>
+  <div class="profile-panel reveal">
+
+    <div class="profile-head">
+      <span class="mono green">
+        PROFILE / 01
+      </span>
+
+      <span class="mono">
+        AVAILABLE
+      </span>
+    </div>
+
+    <div class="profile-name">
+      Kaneti<br>
+      <span>Vivek</span>
+    </div>
+
+    <div class="profile-role">
+      AI / LLM Evaluation Analyst
+    </div>
+
+    <div class="profile-rule"></div>
+
+    <div class="profile-facts">
+
+      <div>
+        <small>BASED IN</small>
+        <b>Hyderabad, India</b>
+      </div>
+
+      <div>
+        <small>FOCUS</small>
+        <b>Model quality & safety</b>
+      </div>
+
+      <div>
+        <small>MODALITIES</small>
+        <b>Text · Vision · Speech</b>
+      </div>
+
+      <div>
+        <small>OPEN TO</small>
+        <b>Evaluation opportunities</b>
+      </div>
+
+    </div>
+
+    <div class="profile-signal">
+      <span class="signal-dot"></span>
+      <span class="mono">
+        reviewing the details that matter
+      </span>
+    </div>
+
+  </div>
+
+</section>
 
 
-<section class="section" id="capabilities"><div class="wrap"><div class="section-title"><div><div class="kicker mono">03 / Skills & capabilities</div><h2>Everything you need to<br /><em>read the signal.</em></h2></div><p>From response ranking to multimodal annotation, I build the quality layer between model output and real-world use.</p></div><div class="skill-grid-14"><article class="skill-card-14"><span>01 — EVAL</span><h3>Prompt Engineering & Evaluation</h3><p>Zero-shot, few-shot, chain-of-thought and role prompting; iterative refinement and structured AI-output evaluation.</p></article><article class="skill-card-14"><span>02 — RANK</span><h3>LLM Evaluation & Response Ranking</h3><p>SFT data review, A/B comparison, pairwise preference ranking, Likert/ELO scoring, rubric and guideline adherence.</p></article><article class="skill-card-14"><span>03 — DATA</span><h3>Data Annotation & Labeling</h3><p>Text, prompt-response and multi-turn conversation annotation with quality calibration across bulk-volume projects.</p></article><article class="skill-card-14"><span>04 — VISION</span><h3>Multimodal & Computer Vision</h3><p>Image/video annotation, referring-expression and bounding-box/grounding annotation, plus GUI agent annotation.</p></article><article class="skill-card-14"><span>05 — SPEECH</span><h3>Speech, S2S & Transcription QA</h3><p>Live side-by-side ELO ranking of multimodal and speech-to-speech agent responses; transcription accuracy and audio-text alignment review.</p></article><article class="skill-card-14"><span>06 — LANGUAGE</span><h3>Linguistic AI & Language Quality</h3><p>Linguistic data annotation, language quality evaluation, text annotation and review. RWS Linguistic AI-certified.</p></article><article class="skill-card-14"><span>07 — QA</span><h3>AI Quality Assurance</h3><p>Hallucination detection, factual accuracy verification, coherence review and instruction-following assessment.</p></article><article class="skill-card-14"><span>08 — SAFETY</span><h3>AI Safety & Policy Compliance</h3><p>Harmful content flagging, red-teaming support, content moderation, bias and toxicity review.</p></article><article class="skill-card-14"><span>09 — RUBRICS</span><h3>Rubric & PRP Design</h3><p>Multi-dimensional grading rubrics for tone, logic and instruction-following; Ideal Response Profiles by industry/persona.</p></article><article class="skill-card-14"><span>10 — CALIBRATION</span><h3>QA Audits & Calibration</h3><p>Leading audits across large-scale annotation projects and reducing rater disagreement through consistent calibration.</p></article><article class="skill-card-14"><span>11 — TECHNICAL</span><h3>Technical Foundations</h3><p>Working knowledge of Python and JavaScript, backed by Cisco certification.</p></article><article class="skill-card-14"><span>12 — CHATBOT</span><h3>Conversational AI Design</h3><p>Designing natural-language interaction flows, prompt-driven chatbot behavior and dynamic response experiences for production web applications.</p></article><article class="skill-card-14"><span>13 — INTEGRATION</span><h3>LLM & REST API Integration</h3><p>Connecting LLM APIs and REST endpoints to browser interfaces with JavaScript, then testing and iterating toward reliable user-facing functionality.</p></article><article class="skill-card-14"><span>14 — PLATFORM</span><h3>Opportunity Data & Workflow Design</h3><p>Structuring AI opportunity data, categorizing listings, and building searchable discovery workflows with JSON, GitHub and Vercel.</p></article></div></div></div></section>
-<section class="section" id="tools"><div class="wrap"><div class="tools-section"><div><div class="kicker mono">03 / Built for every modality</div><h2>Use the right<br /><em>lens.</em></h2><p style="color:var(--muted);max-width:410px">Different inputs need different quality questions. Select a modality to see the review lens I bring.</p><div class="tool-tabs"><button class="tool-tab active" data-tool="text">Text</button><button class="tool-tab" data-tool="vision">Vision</button><button class="tool-tab" data-tool="speech">Speech</button><button class="tool-tab" data-tool="safety">Safety</button></div></div><div class="tool-preview reveal"><div class="tool-preview-top"><span class="mono" id="toolCode">TEXT / LLM</span><span class="mono green">● calibrated</span></div><h3 id="toolTitle">Language that holds up.</h3><p id="toolText">Prompt-response review, multi-turn conversation annotation, pairwise ranking and instruction-following assessment.</p><div class="code-row" id="toolChips"><span>factuality</span><span>coherence</span><span>tone</span><span>intent</span></div></div></div></div></section>
-<section class="section" id="stories"><div class="wrap"><div class="section-title"><div><div class="kicker mono">05 / Field notes</div><h2>What quality<br /><em>sounds like.</em></h2></div><p>Principles I bring to every evaluation, annotation project and AI product conversation.</p></div><div class="community reveal"><div><div class="mono green">A quality-minded point of view</div><h3>Good AI should be<br />easy to trust.</h3><p>Careful review is not about slowing teams down. It is how teams learn what “good” means before users have to.</p></div><div class="quote-grid"><div class="quote-card"><b>01 / clarity</b>Separate a confident answer from a correct one.</div><div class="quote-card"><b>02 / consistency</b>Make the quality bar legible to every reviewer.</div><div class="quote-card"><b>03 / context</b>Judge the response against the user’s actual intent.</div><div class="quote-card"><b>04 / safety</b>Reliability includes what a model should not do.</div></div></div></div></section>
-<section class="cta" id="contact"><div class="wrap"><div class="kicker mono">06 / Start a conversation</div><h2>Build something<br />people can trust.</h2><p>Open to AI evaluation, data quality, prompt engineering and multimodal annotation opportunities. If the work needs a careful eye, let’s talk.</p><div class="cta-actions"><a class="button" href="mailto:vivekkaneti2@gmail.com">Email me ↗</a><a class="button" href="https://linkedin.com/in/kanetivivek" target="_blank" rel="noopener">LinkedIn ↗</a><a class="button" href="https://drive.google.com/file/d/1ji9VLHfGl3T52XYSpRu1irPdKB-yc7x3/view?usp=sharing">Download resume ↓</a></div></div></section>
-</main><footer class="wrap"><span>© 2026 Kaneti Vivek</span><span class="available">● Available for meaningful AI work</span></footer>
+<!-- =======================================================
+     ABOUT
+     ======================================================= -->
+
+<section class="section" id="about">
+
+  <div class="wrap">
+
+    <div class="section-title">
+
+      <div>
+
+        <div class="kicker mono">
+          01 / About
+        </div>
+
+        <h2>
+          Careful review.<br>
+          <em>Clear signals.</em>
+        </h2>
+
+      </div>
+
+      <p>
+        Kaneti Vivek is an AI/LLM Evaluation Analyst focused
+        on making model behavior understandable, comparable
+        and useful.
+      </p>
+
+    </div>
+
+
+    <div class="about-grid reveal">
+
+      <p class="about-quote">
+        I work where language, data quality and
+        <span>responsible AI</span> meet.
+      </p>
+
+      <div class="about-copy">
+
+        <p>
+          I evaluate model responses, prompts and multimodal
+          data with a production mindset. My work spans SFT
+          data review, pairwise comparison, Likert and ELO
+          scoring, rubric adherence, hallucination detection,
+          instruction-following and AI safety checks.
+        </p>
+
+        <p>
+          I also bring hands-on experience with image and
+          video annotation, speech-to-speech evaluation,
+          transcription quality and language review — always
+          with a focus on consistency and useful feedback.
+        </p>
+
+        <a
+          class="about-project"
+          href="https://annotatorjobs.vercel.app/"
+          target="_blank"
+          rel="noopener">
+
+          <span class="mono">
+            FOUNDER PROJECT
+          </span>
+
+          <b>
+            EvalLoop Jobs ↗
+          </b>
+
+          <small>
+            Built and deployed AI opportunity discovery platform
+          </small>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     EXPERIENCE
+     ======================================================= -->
+
+<section class="section" id="experience">
+
+  <div class="wrap">
+
+    <div class="section-title">
+
+      <div>
+
+        <div class="kicker mono">
+          02 / Experience
+        </div>
+
+        <h2>
+          Work that keeps<br>
+          <em>AI honest.</em>
+        </h2>
+
+      </div>
+
+      <p>
+        Experience across evaluation, annotation, quality
+        assurance and independent AI product building.
+      </p>
+
+    </div>
+
+
+    <div class="experience-list reveal">
+
+      <article class="experience-row">
+
+        <div class="experience-date mono">
+          JUNE 2026 — AUG 2026
+        </div>
+
+        <div>
+
+          <h3>
+            AI / LLM Evaluation Analyst
+          </h3>
+
+          <p class="experience-company">
+            <strong>Innodata</strong>
+            · 3-month experience · June 2026 — August 2026
+          </p>
+
+          <p>
+            Evaluate model outputs across text, vision and
+            speech using structured rubrics, pairwise ranking,
+            Likert/ELO scoring and instruction-following checks.
+          </p>
+
+          <div class="experience-tags">
+
+            <span>Response evaluation</span>
+            <span>Calibration</span>
+            <span>AI safety</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="experience-row">
+
+        <div class="experience-date mono">
+          INDEPENDENT BUILD
+        </div>
+
+        <div>
+
+          <h3>
+            Founder — EvalLoop Jobs
+          </h3>
+
+          <p class="experience-company">
+            AI opportunity discovery platform
+          </p>
+
+          <p>
+            Designed, built and deployed a searchable platform
+            for AI training, data annotation, LLM evaluation and
+            AI operations opportunities, including an LLM-powered
+            chatbot.
+          </p>
+
+          <div class="experience-tags">
+
+            <span>Product building</span>
+            <span>LLM integration</span>
+            <span>GitHub · Vercel</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     SKILLS
+     ======================================================= -->
+
+<section class="section" id="capabilities">
+
+  <div class="wrap">
+
+    <div class="section-title">
+
+      <div>
+
+        <div class="kicker mono">
+          03 / Skills & capabilities
+        </div>
+
+        <h2>
+          Everything you need to<br>
+          <em>read the signal.</em>
+        </h2>
+
+      </div>
+
+      <p>
+        From response ranking to multimodal annotation,
+        I build the quality layer between model output
+        and real-world use.
+      </p>
+
+    </div>
+
+
+    <div class="skill-grid-14">
+
+      <article class="skill-card-14">
+        <span>01 — EVAL</span>
+        <h3>Prompt Engineering & Evaluation</h3>
+        <p>
+          Zero-shot, few-shot, chain-of-thought and role
+          prompting; iterative refinement and structured
+          AI-output evaluation.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>02 — RANK</span>
+        <h3>LLM Evaluation & Response Ranking</h3>
+        <p>
+          SFT data review, A/B comparison, pairwise preference
+          ranking, Likert/ELO scoring, rubric and guideline
+          adherence.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>03 — DATA</span>
+        <h3>Data Annotation & Labeling</h3>
+        <p>
+          Text, prompt-response and multi-turn conversation
+          annotation with quality calibration across
+          bulk-volume projects.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>04 — VISION</span>
+        <h3>Multimodal & Computer Vision</h3>
+        <p>
+          Image/video annotation, referring-expression and
+          bounding-box/grounding annotation, plus GUI agent
+          annotation.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>05 — SPEECH</span>
+        <h3>Speech, S2S & Transcription QA</h3>
+        <p>
+          Live side-by-side ELO ranking of multimodal and
+          speech-to-speech agent responses; transcription
+          accuracy and audio-text alignment review.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>06 — LANGUAGE</span>
+        <h3>Linguistic AI & Language Quality</h3>
+        <p>
+          Linguistic data annotation, language quality
+          evaluation, text annotation and review.
+          RWS Linguistic AI-certified.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>07 — QA</span>
+        <h3>AI Quality Assurance</h3>
+        <p>
+          Hallucination detection, factual accuracy
+          verification, coherence review and
+          instruction-following assessment.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>08 — SAFETY</span>
+        <h3>AI Safety & Policy Compliance</h3>
+        <p>
+          Harmful content flagging, red-teaming support,
+          content moderation, bias and toxicity review.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>09 — RUBRICS</span>
+        <h3>Rubric & PRP Design</h3>
+        <p>
+          Multi-dimensional grading rubrics for tone, logic
+          and instruction-following; Ideal Response Profiles
+          by industry/persona.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>10 — CALIBRATION</span>
+        <h3>QA Audits & Calibration</h3>
+        <p>
+          Leading audits across large-scale annotation
+          projects and reducing rater disagreement through
+          consistent calibration.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>11 — TECHNICAL</span>
+        <h3>Technical Foundations</h3>
+        <p>
+          Working knowledge of Python and JavaScript,
+          backed by Cisco certification.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>12 — CHATBOT</span>
+        <h3>Conversational AI Design</h3>
+        <p>
+          Designing natural-language interaction flows,
+          prompt-driven chatbot behavior and dynamic
+          response experiences for production web applications.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>13 — INTEGRATION</span>
+        <h3>LLM & REST API Integration</h3>
+        <p>
+          Connecting LLM APIs and REST endpoints to browser
+          interfaces with JavaScript, then testing and
+          iterating toward reliable user-facing functionality.
+        </p>
+      </article>
+
+      <article class="skill-card-14">
+        <span>14 — PLATFORM</span>
+        <h3>Opportunity Data & Workflow Design</h3>
+        <p>
+          Structuring AI opportunity data, categorizing
+          listings, and building searchable discovery
+          workflows with JSON, GitHub and Vercel.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     TOOLS / PROJECTS
+     ======================================================= -->
+
+<section class="section" id="tools">
+
+  <div class="wrap">
+
+    <div class="tools-section">
+
+      <div>
+
+        <div class="kicker mono">
+          04 / Built for every modality
+        </div>
+
+        <h2>
+          Use the right<br>
+          <em>lens.</em>
+        </h2>
+
+        <p style="color:var(--muted);max-width:410px">
+          Different inputs need different quality questions.
+          Select a modality to see the review lens I bring.
+        </p>
+
+        <div class="tool-tabs">
+
+          <button
+            class="tool-tab active"
+            data-tool="text">
+            Text
+          </button>
+
+          <button
+            class="tool-tab"
+            data-tool="vision">
+            Vision
+          </button>
+
+          <button
+            class="tool-tab"
+            data-tool="speech">
+            Speech
+          </button>
+
+          <button
+            class="tool-tab"
+            data-tool="safety">
+            Safety
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="tool-preview reveal">
+
+        <div class="tool-preview-top">
+
+          <span
+            class="mono"
+            id="toolCode">
+            TEXT / LLM
+          </span>
+
+          <span class="mono green">
+            ● calibrated
+          </span>
+
+        </div>
+
+        <h3 id="toolTitle">
+          Language that holds up.
+        </h3>
+
+        <p id="toolText">
+          Prompt-response review, multi-turn conversation
+          annotation, pairwise ranking and instruction-following
+          assessment.
+        </p>
+
+        <div
+          class="code-row"
+          id="toolChips">
+
+          <span>factuality</span>
+          <span>coherence</span>
+          <span>tone</span>
+          <span>intent</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     FIELD NOTES
+     ======================================================= -->
+
+<section class="section" id="stories">
+
+  <div class="wrap">
+
+    <div class="section-title">
+
+      <div>
+
+        <div class="kicker mono">
+          05 / Field notes
+        </div>
+
+        <h2>
+          What quality<br>
+          <em>sounds like.</em>
+        </h2>
+
+      </div>
+
+      <p>
+        Principles I bring to every evaluation,
+        annotation project and AI product conversation.
+      </p>
+
+    </div>
+
+
+    <div class="community reveal">
+
+      <div>
+
+        <div class="mono green">
+          A quality-minded point of view
+        </div>
+
+        <h3>
+          Good AI should be<br>
+          easy to trust.
+        </h3>
+
+        <p>
+          Careful review is not about slowing teams down.
+          It is how teams learn what “good” means before
+          users have to.
+        </p>
+
+      </div>
+
+
+      <div class="quote-grid">
+
+        <div class="quote-card">
+          <b>01 / clarity</b>
+          Separate a confident answer from a correct one.
+        </div>
+
+        <div class="quote-card">
+          <b>02 / consistency</b>
+          Make the quality bar legible to every reviewer.
+        </div>
+
+        <div class="quote-card">
+          <b>03 / context</b>
+          Judge the response against the user’s actual intent.
+        </div>
+
+        <div class="quote-card">
+          <b>04 / safety</b>
+          Reliability includes what a model should not do.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     CONTACT
+     ======================================================= -->
+
+<section class="cta" id="contact">
+
+  <div class="wrap">
+
+    <div class="kicker mono">
+      06 / Start a conversation
+    </div>
+
+    <h2>
+      Build something<br>
+      people can trust.
+    </h2>
+
+    <p>
+      Open to AI evaluation, data quality, prompt engineering
+      and multimodal annotation opportunities. If the work
+      needs a careful eye, let’s talk.
+    </p>
+
+    <div class="cta-actions">
+
+      <a
+        class="button"
+        href="mailto:vivekkaneti2@gmail.com">
+        Email me ↗
+      </a>
+
+      <a
+        class="button"
+        href="https://linkedin.com/in/kanetivivek"
+        target="_blank"
+        rel="noopener">
+        LinkedIn ↗
+      </a>
+
+      <a
+        class="button"
+        href="https://drive.google.com/file/d/1ji9VLHfGl3T52XYSpRu1irPdKB-yc7x3/view?usp=sharing">
+        Download resume ↓
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- =======================================================
+     FOOTER
+     ======================================================= -->
+
+<footer class="wrap">
+
+  <span>
+    © 2026 Kaneti Vivek
+  </span>
+
+  <span class="available">
+    ● Available for meaningful AI work
+  </span>
+
+</footer>
+
+
+<!-- =======================================================
+     JAVASCRIPT
+     ======================================================= -->
+
 <script>
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.progress').style.width=(scrollY/(h.scrollHeight-innerHeight)*100)+'%'});
-const dashboard={review:['LIVE REVIEW / RESPONSE 0148','Make every answer count.','Inspect response quality across accuracy, relevance, reasoning, safety and instruction-following before it reaches a user.','94.8%','1,248','03'],rubric:['RUBRIC ENGINE / ACTIVE','Turn taste into a standard.','Multi-dimensional rubrics make tone, logic, factuality and instruction-following clear, comparable and repeatable.','97.2%','38','14'],calibrate:['CALIBRATION / TEAM VIEW','Keep the signal consistent.','Calibration rounds reduce rater disagreement and help every reviewer apply the same quality bar.','91.6%','126','05']};document.querySelectorAll('.dash-tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.dash-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');let d=dashboard[b.dataset.view];['dashLabel','dashTitle','dashText','m1','m2','m3'].forEach((id,i)=>document.getElementById(id).textContent=d[i])});
-const tools={text:['TEXT / LLM','Language that holds up.','Prompt-response review, multi-turn conversation annotation, pairwise ranking and instruction-following assessment.',['factuality','coherence','tone','intent']],vision:['VISION / MULTIMODAL','See what the model sees.','Image and video annotation, referring expressions, grounding, bounding boxes and GUI agent review.',['grounding','objects','layout','actions']],speech:['SPEECH / S2S','Listen for the signal.','Live speech-to-speech evaluation, transcription accuracy, audio-text alignment and natural conversation quality.',['accuracy','latency','intonation','alignment']],safety:['SAFETY / POLICY','Reliability includes restraint.','Harmful-content flagging, bias, toxicity, policy compliance, red-teaming support and escalation.',['risk','bias','toxicity','policy']]};document.querySelectorAll('.tool-tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tool-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');let d=tools[b.dataset.tool];document.getElementById('toolCode').textContent=d[0];document.getElementById('toolTitle').textContent=d[1];document.getElementById('toolText').textContent=d[2];document.getElementById('toolChips').innerHTML=d[3].map(x=>'<span>'+x+'</span>').join('')});
 
-const cursorDot=document.querySelector('.cursor-dot'),cursorRing=document.querySelector('.cursor-ring');let cursorX=0,cursorY=0,ringX=0,ringY=0;function cursorFrame(){ringX+=(cursorX-ringX)*.16;ringY+=(cursorY-ringY)*.16;cursorRing.style.left=ringX+'px';cursorRing.style.top=ringY+'px';requestAnimationFrame(cursorFrame)}if(cursorDot&&cursorRing&&matchMedia('(pointer:fine)').matches){addEventListener('mousemove',e=>{cursorX=e.clientX;cursorY=e.clientY;cursorDot.style.left=cursorX+'px';cursorDot.style.top=cursorY+'px';cursorDot.style.opacity='1';cursorRing.style.opacity='1'});addEventListener('mouseout',e=>{if(!e.relatedTarget){cursorDot.style.opacity='0';cursorRing.style.opacity='0'}});document.querySelectorAll('a,button,input,textarea,.skill-card-14,.story,.profile-panel,.dashboard,.tool-preview').forEach(el=>{el.addEventListener('mouseenter',()=>cursorRing.classList.add('hover'));el.addEventListener('mouseleave',()=>cursorRing.classList.remove('hover'))});cursorFrame()}
-</script></body></html>
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if(menuToggle && mobileMenu){
+
+  menuToggle.addEventListener('click',()=>{
+
+    const isOpen = mobileMenu.classList.toggle('open');
+
+    menuToggle.classList.toggle('open',isOpen);
+
+    menuToggle.setAttribute(
+      'aria-expanded',
+      isOpen ? 'true' : 'false'
+    );
+
+    menuToggle.setAttribute(
+      'aria-label',
+      isOpen ? 'Close navigation' : 'Open navigation'
+    );
+
+  });
+
+
+  /* Close after navigation click */
+
+  mobileMenu.querySelectorAll('a').forEach(link=>{
+
+    link.addEventListener('click',()=>{
+
+      mobileMenu.classList.remove('open');
+
+      menuToggle.classList.remove('open');
+
+      menuToggle.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
+      menuToggle.setAttribute(
+        'aria-label',
+        'Open navigation'
+      );
+
+    });
+
+  });
+
+
+  /* Close when resizing back to desktop */
+
+  window.addEventListener('resize',()=>{
+
+    if(window.innerWidth > 680){
+
+      mobileMenu.classList.remove('open');
+
+      menuToggle.classList.remove('open');
+
+      menuToggle.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
+    }
+
+  });
+
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+   ========================================================= */
+
+const io = new IntersectionObserver(
+  es => es.forEach(e => {
+
+    if(e.isIntersecting){
+
+      e.target.classList.add('show');
+
+      io.unobserve(e.target);
+
+    }
+
+  }),
+  {
+    threshold:.1
+  }
+);
+
+document
+  .querySelectorAll('.reveal')
+  .forEach(e => io.observe(e));
+
+
+/* =========================================================
+   SCROLL PROGRESS
+   ========================================================= */
+
+addEventListener('scroll',()=>{
+
+  let h = document.documentElement;
+
+  let progress =
+    scrollY /
+    (h.scrollHeight - innerHeight) *
+    100;
+
+  document.querySelector('.progress').style.width =
+    progress + '%';
+
+});
+
+
+/* =========================================================
+   TOOL / MODALITY SWITCHER
+   ========================================================= */
+
+const tools = {
+
+  text:[
+    'TEXT / LLM',
+    'Language that holds up.',
+    'Prompt-response review, multi-turn conversation annotation, pairwise ranking and instruction-following assessment.',
+    ['factuality','coherence','tone','intent']
+  ],
+
+  vision:[
+    'VISION / MULTIMODAL',
+    'See what the model sees.',
+    'Image and video annotation, referring expressions, grounding, bounding boxes and GUI agent review.',
+    ['grounding','objects','layout','actions']
+  ],
+
+  speech:[
+    'SPEECH / S2S',
+    'Listen for the signal.',
+    'Live speech-to-speech evaluation, transcription accuracy, audio-text alignment and natural conversation quality.',
+    ['accuracy','latency','intonation','alignment']
+  ],
+
+  safety:[
+    'SAFETY / POLICY',
+    'Reliability includes restraint.',
+    'Harmful-content flagging, bias, toxicity, policy compliance, red-teaming support and escalation.',
+    ['risk','bias','toxicity','policy']
+  ]
+
+};
+
+
+document
+  .querySelectorAll('.tool-tab')
+  .forEach(b => {
+
+    b.onclick = () => {
+
+      document
+        .querySelectorAll('.tool-tab')
+        .forEach(x =>
+          x.classList.remove('active')
+        );
+
+      b.classList.add('active');
+
+      let d = tools[b.dataset.tool];
+
+      document.getElementById('toolCode').textContent =
+        d[0];
+
+      document.getElementById('toolTitle').textContent =
+        d[1];
+
+      document.getElementById('toolText').textContent =
+        d[2];
+
+      document.getElementById('toolChips').innerHTML =
+        d[3]
+          .map(x => '<span>' + x + '</span>')
+          .join('');
+
+    };
+
+  });
+
+
+/* =========================================================
+   CUSTOM CURSOR
+   ========================================================= */
+
+const cursorDot =
+  document.querySelector('.cursor-dot');
+
+const cursorRing =
+  document.querySelector('.cursor-ring');
+
+let cursorX = 0;
+let cursorY = 0;
+
+let ringX = 0;
+let ringY = 0;
+
+
+function cursorFrame(){
+
+  ringX +=
+    (cursorX - ringX) * .16;
+
+  ringY +=
+    (cursorY - ringY) * .16;
+
+  cursorRing.style.left =
+    ringX + 'px';
+
+  cursorRing.style.top =
+    ringY + 'px';
+
+  requestAnimationFrame(cursorFrame);
+
+}
+
+
+if(
+  cursorDot &&
+  cursorRing &&
+  matchMedia('(pointer:fine)').matches
+){
+
+  addEventListener('mousemove',e=>{
+
+    cursorX = e.clientX;
+    cursorY = e.clientY;
+
+    cursorDot.style.left =
+      cursorX + 'px';
+
+    cursorDot.style.top =
+      cursorY + 'px';
+
+    cursorDot.style.opacity = '1';
+
+    cursorRing.style.opacity = '1';
+
+  });
+
+
+  addEventListener('mouseout',e=>{
+
+    if(!e.relatedTarget){
+
+      cursorDot.style.opacity = '0';
+
+      cursorRing.style.opacity = '0';
+
+    }
+
+  });
+
+
+  document
+    .querySelectorAll(
+      'a,button,input,textarea,.skill-card-14,.story,.profile-panel,.dashboard,.tool-preview'
+    )
+    .forEach(el=>{
+
+      el.addEventListener(
+        'mouseenter',
+        () =>
+          cursorRing.classList.add('hover')
+      );
+
+      el.addEventListener(
+        'mouseleave',
+        () =>
+          cursorRing.classList.remove('hover')
+      );
+
+    });
+
+
+  cursorFrame();
+
+}
+
+</script>
+
+</body>
+</html>
